@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Amazon Test Suite" duration-ms="24512" started-at="2025-04-07T12:29:48 IST" finished-at="2025-04-07T12:30:12 IST">
+    <groups>
+    </groups>
+    <test name="Amazon Full Flow" duration-ms="24512" started-at="2025-04-07T12:29:48 IST" finished-at="2025-04-07T12:30:12 IST">
+      <class name="testCases.AmazonTest">
+        <test-method status="PASS" signature="setup()[pri:0, instance:testCases.AmazonTest@a035a0]" name="setup" is-config="true" duration-ms="5435" started-at="2025-04-07T12:29:48 IST" finished-at="2025-04-07T12:29:53 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="validateSearchSuggestions()[pri:1, instance:testCases.AmazonTest@a035a0]" name="validateSearchSuggestions" duration-ms="5985" started-at="2025-04-07T12:29:53 IST" finished-at="2025-04-07T12:29:59 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateSearchSuggestions -->
+        <test-method status="PASS" signature="selectProductFromDropdown()[pri:2, instance:testCases.AmazonTest@a035a0]" name="selectProductFromDropdown" duration-ms="3435" started-at="2025-04-07T12:29:59 IST" finished-at="2025-04-07T12:30:03 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selectProductFromDropdown -->
+        <test-method status="PASS" signature="verifyNewTabAndAppleStoreNavigation()[pri:3, instance:testCases.AmazonTest@a035a0]" name="verifyNewTabAndAppleStoreNavigation" duration-ms="5043" started-at="2025-04-07T12:30:03 IST" finished-at="2025-04-07T12:30:08 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyNewTabAndAppleStoreNavigation -->
+        <test-method status="PASS" signature="verifyAppleWatchQuickLook()[pri:4, instance:testCases.AmazonTest@a035a0]" name="verifyAppleWatchQuickLook" duration-ms="3475" started-at="2025-04-07T12:30:08 IST" finished-at="2025-04-07T12:30:11 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyAppleWatchQuickLook -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:testCases.AmazonTest@a035a0]" name="tearDown" is-config="true" duration-ms="1099" started-at="2025-04-07T12:30:11 IST" finished-at="2025-04-07T12:30:12 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testCases.AmazonTest -->
+    </test> <!-- Amazon Full Flow -->
+  </suite> <!-- Amazon Test Suite -->
+</testng-results>
