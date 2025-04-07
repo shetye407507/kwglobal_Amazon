@@ -1,6 +1,8 @@
 package base;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
+import utils.ConfigReader;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -16,7 +18,7 @@ public class BaseTest {
     @BeforeClass
     public void setup() {
         WebDriverManager.chromedriver().setup();
-
+        int waitTime = Integer.parseInt(ConfigReader.get("implicitWait"));
         ChromeOptions options = new ChromeOptions();
         options.addArguments("--remote-allow-origins=*"); 
         options.addArguments("--disable-popup-blocking"); 
@@ -26,9 +28,9 @@ public class BaseTest {
         driver = new ChromeDriver(options);
         driver.manage().deleteAllCookies();
         driver.manage().window().maximize();
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(waitTime));
 
-        driver.get("https://www.amazon.in/");
+        driver.get(ConfigReader.get("baseUrl"));
     }
 
     // This method runs once after all test methods in the class have executed

@@ -18,9 +18,9 @@ public class ExtentManager {
 
             extent = new ExtentReports();
             extent.attachReporter(sparkReporter);
-            extent.setSystemInfo("Host Name", "Localhost");
-            extent.setSystemInfo("Environment", "QA");
-            extent.setSystemInfo("User Name", "Tester");
+            extent.setSystemInfo("URL", "https://www.amazon.in/");
+            extent.setSystemInfo("Environment", "Prod");
+            extent.setSystemInfo("Author", "Prathamesh Shetye");
         }
         return extent;
     }
